@@ -32,3 +32,5 @@ apiKey: generateApikey
 #noCompanyException: no such company present
 
 privateKey: ${privatekey}
+noCompany: no such companyPresent
+subscription: subscription
