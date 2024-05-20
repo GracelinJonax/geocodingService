@@ -1,6 +1,6 @@
 spring:
   datasource:
-    username: postgres
+    username: ${name}
     password: Grace@2002
     url: jdbc:postgresql://localhost:5432/geocoding
   data:

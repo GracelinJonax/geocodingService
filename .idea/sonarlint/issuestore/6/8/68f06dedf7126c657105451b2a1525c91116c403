@@ -1,12 +1,0 @@
-
-i
-java:S1192"MDefine a constant instead of duplicating this literal "subscription" 4 times.(«¾†üÿÿÿÿ
-s
-java:S1192O"XDefine a constant instead of duplicating this literal "no such company present" 4 times.(ëé•¸üÿÿÿÿ
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Â±ÅÈ8ºşşïŞ1
-X
-java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞ
-8
-java:S5542"Use a secure padding scheme.(»¦µªúÿÿÿÿ
-8
-java:S5542ì"Use a secure padding scheme.(»¦µªúÿÿÿÿ

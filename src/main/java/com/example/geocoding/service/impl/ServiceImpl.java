@@ -187,12 +187,12 @@ public class ServiceImpl implements Services {
     @Override
     public void saveRequestResponse(ContentCachingRequestWrapper requestWrapper, HttpServletRequest request, ContentCachingResponseWrapper responseWrapper, HttpServletResponse response, String subscriptionId) {
         if (subscriptionViewRepoService.findBySubscriptionId(subscriptionId).getPlanType().equalsIgnoreCase("limited request per day")) {
-            if (redisRequestCounter.hasKey(subscriptionId + LocalDate.now()))
+            if (redisRequestCounter.hasKey(subscriptionId + LocalDate.now()).equals(Boolean.TRUE))
                 redisRequestCounter.incrementValue(subscriptionId + LocalDate.now());
             else
                 redisRequestCounter.setData(subscriptionId + LocalDate.now(), Long.parseLong("1"));
         } else {
-            if (redisRequestCounter.hasKey(subscriptionId))
+            if (redisRequestCounter.hasKey(subscriptionId).equals(Boolean.TRUE))
                 redisRequestCounter.incrementValue(subscriptionId);
             else
                 redisRequestCounter.setData(subscriptionId, Long.parseLong("1"));
